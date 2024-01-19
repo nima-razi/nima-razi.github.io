@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Courier Prime';
+    src: url('/fonts/courier-prime/CourierPrime-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Courier Prime';
+    src: url('/fonts/courier-prime/CourierPrime-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Courier Prime';
+    src: url('/fonts/courier-prime/CourierPrime-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Courier Prime';
+    src: url('/fonts/courier-prime/CourierPrime-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+body {
+    font-family: 'Courier Prime', sans-serif;
+}
+.custom-menu-icon {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    background: url('/images/menu.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    outline: none;
+}
+.navbar-toggler:focus { /* Removes the 'border' */
+    box-shadow:none;
+}
