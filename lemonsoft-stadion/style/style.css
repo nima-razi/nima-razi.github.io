@@ -1,0 +1,13 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn-outline-secondary.active {
+    background-color: #F8C121; /* lemonsoft brand color */
+    color: white;
+}
+footer {
+    background-color: #F8C121;
+}
