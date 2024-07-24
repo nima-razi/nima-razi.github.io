@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/lemonsoft-stadion/style/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('/lemonsoft-stadion/style/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.btn-outline-secondary.active {
+    background-color: #f8c121; /* lemonsoft brand color */
+    color: white;
+}
+footer {
+    background-color: #f8c121;
+}
