@@ -1,29 +1,10 @@
 @font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+    font-family: 'Coustard';
+    src: url('/style/Coustard/Coustard-Black.ttf') format('truetype');
+    src: url('/style/Coustard/Coustard-Regular.ttf') format('truetype');
 }
 body {
-    font-family: 'Courier Prime', sans-serif;
+    font-family: 'Coustard', sans-serif;
 }
 .custom-menu-icon {
     width: 30px; /* Adjust the width as needed */
