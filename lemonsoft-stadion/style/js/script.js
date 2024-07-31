@@ -1,7 +1,11 @@
 const translations = {
     fi: {
-        "lemonsoft-stadion": "LEMONSOFT STADION",
-        "lemonsoft-stadion-paragraph": "Yli 6000 istumapaikkaa lähellä kenttää tuovat elämykset iholla uutuuttaan kiiltävällä Lemonsoft Stadionilla. Upeat puitteet ja laadukkaat oheispalvelut mahdollistivat kaiken liikunnan harrastamisesta inspiroiviin kokouksiin, isoihin yleisötapahtumiin ja suuren luokan konsertteihin.",
+        "carousel-slide-1-header": "YLI 6000 ISTUMAPAIKKAA",
+        "carousel-slide-1-paragraph": "Koe VPS:n kotikenttä.",
+        "carousel-slide-2-header": "LIIKUNTAA, KOKOUKSIA, YLEISÖTAPAHTUMIA & KONSERTTEJA",
+        "carousel-slide-2-paragraph": "Monipuolisia palveluja ja mahdollisuuksia.",
+        "carousel-slide-3-header": "VUOSI SUUNNITTELUA & TOTEUTUSTA",
+        "carousel-slide-3-paragraph": "Taidokasta rakentamista historiaa kunnioittaen.",
         "booking-calendar": "VARAUSKALENTERI",
         "getting-here": "SAAPUMINEN",
         "info": "INFO",
@@ -20,8 +24,12 @@ const translations = {
         "lemonsoft-info-button": "LUE LISÄÄ"
     },
     en: {
-        "lemonsoft-stadion": "LEMONSOFT STADION",
-        "lemonsoft-stadion-paragraph": "More than 6,000 seats close to the field bring new experiences on the skin at the shiny Lemonsoft Stadium. The wonderful setting and high-quality ancillary services made everything possible, from exercising to inspiring meetings, large public events and high-class concerts.",
+        "carousel-slide-1-header": "OVER 6000 SEATS",
+        "carousel-slide-1-paragraph": "Experience the VPS's homefield.",
+        "carousel-slide-2-header": "SPORTS, MEETINGS & CONCERTS",
+        "carousel-slide-2-paragraph": "Varying services and opportunities.",
+        "carousel-slide-3-header": "DESIGNED & COMPLETED IN A YEAR",
+        "carousel-slide-3-paragraph": "Skillful construction with respect for history.",
         "booking-calendar": "BOOKING CALENDAR",
         "getting-here": "GETTING HERE",
         "info": "INFO",
@@ -40,8 +48,12 @@ const translations = {
         "lemonsoft-info-button": "LEARN MORE"
     },
     se: {
-        "lemonsoft-stadion": "LEMNSOFT STADION",
-        "lemonsoft-stadion-paragraph": "Mer än 6 000 platser nära planen ger nya upplevelser på huden på det glänsande Lemonsoft Stadium. Den underbara miljön och högkvalitativa kringtjänster gjorde allt möjligt, från träning till inspirerande möten, stora publikevenemang och högklassiga konserter.",
+        "carousel-slide-1-header": "ÖVER 6000 PLATSER",
+        "carousel-slide-1-paragraph": "Upplev VPS:s hemmaplan.",
+        "carousel-slide-2-header": "SPORT, MÖTEN & KONSERTER",
+        "carousel-slide-2-paragraph": "Olika tjänster och möjligheter.",
+        "carousel-slide-3-header": "DESIGNAD & FÄRDIG PÅ ETT ÅR",
+        "carousel-slide-3-paragraph": "Skickligt byggande med respekt för historien.",
         "booking-calendar": "BOKNINGSKALENDER",
         "getting-here": "HITTA HIT",
         "info": "INFO",
