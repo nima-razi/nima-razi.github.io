@@ -1,27 +1,24 @@
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+@font-face{
+    font-family: 'Archivo';
+    src: url('/pelimies.com/style/Archivo/Archivo-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('/pelimies.com/style/Archivo/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
 }
 body {
-    font-family: 'Courier Prime', sans-serif;
+    font-family: 'Archivo', sans-serif;
+}
+.navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+    background: url('/images/menu.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    outline: none;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus { /* Removes the 'border' */
+    box-shadow: none;
 }

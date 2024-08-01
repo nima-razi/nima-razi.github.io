@@ -4,11 +4,15 @@
     src: url('/style/Coustard/Coustard-Regular.ttf') format('truetype');
 }
 body {
+    background-color: #eee;
     font-family: 'Coustard', sans-serif;
 }
-.custom-menu-icon {
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
+.navbar {
+    background-color: #eee;
+}
+.navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
     background: url('/images/menu.png') no-repeat center center;
     background-size: contain;
     border: none;
@@ -16,6 +20,15 @@ body {
     margin: 0; /* Remove default margin */
     outline: none;
 }
+.navbar-toggler {
+    border: none;
+}
 .navbar-toggler:focus { /* Removes the 'border' */
-    box-shadow:none;
+    box-shadow: none;
+}
+.card-body {
+    background-color: #eee;
+}
+.accordion-button {
+    background-color: #eee;
 }
