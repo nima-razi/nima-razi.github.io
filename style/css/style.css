@@ -4,11 +4,7 @@
     src: url('/style/Coustard/Coustard-Regular.ttf') format('truetype');
 }
 body {
-    background-color: #eee;
     font-family: 'Coustard', sans-serif;
-}
-.navbar {
-    background-color: #eee;
 }
 .navbar-toggler-icon {
     width: 25px;
@@ -25,10 +21,4 @@ body {
 }
 .navbar-toggler:focus { /* Removes the 'border' */
     box-shadow: none;
-}
-.card-body {
-    background-color: #eee;
-}
-.accordion-button {
-    background-color: #eee;
 }
