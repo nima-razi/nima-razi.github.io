@@ -1,27 +1,24 @@
 @font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Courier Prime';
-    src: url('/fonts/courier-prime/CourierPrime-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+    font-family: 'Lora';
+    src: url('/leipatehdas/style/Lora/Lora-Italic-VariableFont_wght.ttf')format('truetype');
+    src: url('/leipatehdas/style/Lora/Lora-VariableFont_wght.ttf')format('truetype');
 }
 body {
-    font-family: 'Courier Prime', sans-serif;
+    font-family: 'Lora', sans-serif;
+}
+.card img{
+    height: 18rem;
+    width: 100%; /* Ensure the image takes up the full width of the card */
+    object-fit: contain; 
+}
+footer {
+    background-color: #ad2f00;
+    color: white;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #eee;
 }
