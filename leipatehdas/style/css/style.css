@@ -125,9 +125,4 @@ video {
 }
 .text-overlay {
 	z-index: 2; /* Make sure text is above the overlay */
-	padding: 20px; /* Optional: Add some padding to the text */
-}
-
-.text-white {
-	color: white; /* Ensure the text is visible against the dark overlay */
 }
