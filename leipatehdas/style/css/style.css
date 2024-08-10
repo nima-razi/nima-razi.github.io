@@ -105,3 +105,29 @@ footer a:hover {
 	border: var(--bs-card-border-width) solid var(--bs-card-border-color);
 	border-radius: none;
 }
+.position-relative {
+	position: relative;
+}
+.overlay {
+	background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+video {
+	position: relative;
+	z-index: 0;
+	object-fit: cover; /* Ensure the video covers the entire container */
+	display: block; /* Remove default inline-block spacing */
+}
+.text-overlay {
+	z-index: 2; /* Make sure text is above the overlay */
+	padding: 20px; /* Optional: Add some padding to the text */
+}
+
+.text-white {
+	color: white; /* Ensure the text is visible against the dark overlay */
+}

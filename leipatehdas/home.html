@@ -29,10 +29,20 @@
         </div>
     </nav>
     
-    <div class="container-fluid mx-0 px-0"> 
-        <video class="w-100" autoplay loop muted playsinline>
-            <source src="images/videos/after-ski-short.webm" type="video/webm"/>
-        </video>
+    <div class="container-fluid px-0">
+        <div class="position-relative" style="overflow: hidden;">
+            <video class="w-100" autoplay loop muted playsinline style="display: block;">
+                <source src="images/videos/after-ski-short.webm" type="video/webm"/>
+            </video>
+            <!-- Dark overlay -->
+            <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+            <!-- Text overlay -->
+             <div class="text-overlay position-absolute top-50 start-50 translate-middle text-center text-white">
+                <h1 class="display-2">Nightclub & Bar</h1>
+                <p>Enjoy the upstairs club or just hang out downstairs.</p>
+            </div>
+        </div>
     </div>
     
     <div class="container-fluid py-4" id="events">   
