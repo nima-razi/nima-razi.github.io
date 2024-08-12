@@ -54,3 +54,6 @@ body {
 	border: var(--bs-card-border-width) solid var(--bs-card-border-color);
 	border-radius: none;
 }
+footer {
+	background-color: #ed2026;
+}
