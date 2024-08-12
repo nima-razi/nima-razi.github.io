@@ -22,3 +22,6 @@ body {
 .navbar-toggler:focus { /* Removes the 'border' */
     box-shadow: none;
 }
+.text-justify {
+    text-align: justify;
+}

@@ -72,3 +72,6 @@ video {
 .text-overlay {
 	z-index: 2; /* Make sure text is above the overlay */
 }
+.text-justify {
+    text-align: justify;
+}
