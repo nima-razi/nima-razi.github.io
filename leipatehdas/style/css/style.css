@@ -17,7 +17,7 @@ footer a {
     text-decoration: none;
 }
 footer a:hover {
-    color: #eee;
+    color: #ccc;
 }
 .btn-primary {
 	--bs-btn-color: #fff;
@@ -67,8 +67,6 @@ footer a:hover {
 video {
 	position: relative;
 	z-index: 0;
-	object-fit: cover; /* Ensure the video covers the entire container */
-	display: block; /* Remove default inline-block spacing */
 }
 .text-overlay {
 	z-index: 2; /* Make sure text is above the overlay */

@@ -90,3 +90,9 @@ footer {
   --bs-btn-disabled-bg: #333333;
   --bs-btn-disabled-border-color: #333333;
 }
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #eee;
+}
