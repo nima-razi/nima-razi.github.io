@@ -1,34 +1,47 @@
 @font-face {
     font-family: 'Coustard';
-    src: url('/style/Coustard/Coustard-Black.ttf') format('truetype');
-    src: url('/style/Coustard/Coustard-Regular.ttf') format('truetype');
+    src: url('/style/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('/style/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 body {
     font-family: 'Coustard', sans-serif;
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.navbar-toggler-icon {
-    width: 25px;
-    height: 25px;
-    background: url('/images/menu.png') no-repeat center center;
-    background-size: contain;
-    border: none;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    outline: none;
+.container-fluid {
+    height: 100vh;
 }
-.navbar-toggler {
-    border: none;
-}
-.navbar-toggler:focus { /* Removes the 'border' */
-    box-shadow: none;
+.row {
+    height: 100%;
 }
 .text-justify {
     text-align: justify;
 }
-footer a {
-    color: #fff;
-    text-decoration: none;
+.card {
+    border: 1px solid #bbb;
+    color: #eee;
+    background: inherit;
+    backdrop-filter: blur(30px);
 }
-footer a:hover {
+.nav {
+    border: 1px solid #bbb;
+    background: inherit;
+    backdrop-filter: blur(30px);
+}
+.nav-link {
+    color: #eee;
+}
+.nav-link:hover {
     color: #ccc;
+}
+a {
+    color: #eee;
+} 
+a:hover {
+    color: #ccc;
+}
+.badge {
+    background-color: yellowgreen;
 }

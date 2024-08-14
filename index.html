@@ -4,219 +4,123 @@
     <link rel="shortcut icon" href="images/ghost.ico" type="image/x-icon">
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#212529">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#212529">
+    <meta name="theme-color" content="#767cc7">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#767cc7">
     <title>Nima Razi - Web Portofolio</title>
     <link rel="stylesheet" href="style/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/css/style.css">
 </head>
 <body>
-    <nav class="navbar bg-light navbar-expand-lg px-3">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Nima Razi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#scrollspyAbout">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyExperience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyEducation">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyProjects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyMiscellaneous">Miscellaneous</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 col-md-8 py-4 px-4">
-                <h1 id="scrollspyAbout" class="text-light display-4" >About</h1>
-                <p class="text-light text-justify">I've worked as a software developer and in IT-support for a year. My work consisted of REST.API and ASP.NET projects and providing support for them in both finnish and english. My strenghts are frontend and database developement. I've bachelors in information technology and I'll start my computer science masters studies in autumun 2024.</p>
-                <p class="text-light">You can also view and download my personal <a href="/files/nima-razi-resume.pdf" class="text-light">Resume.</a></p>
-            </div>
-            <div class="col-lg-2 d-lg-block d-none p-0">
-                <img src="images/me.jpg" class="w-100 d-block" alt="me">
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid col-md-8 py-4">
-        <h1 id="scrollspyExperience" class="display-4">Experience</h1>
-        <div class="row row-cols-1 g-2">
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Software Developer</strong></h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">05.2023 - 10.2023 @Cash-In Consulting</h6>
-                        <p class="card-text">
-                            <ul>
-                                <li>ASP.NET developement with HTML, CSS, JavaScript and C#</li>
-                                <li>database design and developement in Oracle SQL</li>
-                                <li>IT-support</li>
-                                <li>tools included Visual Studio, Git, Microsoft IIS, etc.</li>
-                            </ul>
-                        </p>
+            <div class="col-6">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="nav flex-column me-3 shadow-sm rounded" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link text-capitalize active" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" type="button" role="tab" aria-controls="v-pills-about" aria-selected="true">about</button>
+                        <button class="nav-link text-capitalize" id="v-pills-experience-tab" data-bs-toggle="pill" data-bs-target="#v-pills-experience" type="button" role="tab" aria-controls="v-pills-experience" aria-selected="false">experience</button>
+                        <button class="nav-link text-capitalize" id="v-pills-education-tab" data-bs-toggle="pill" data-bs-target="#v-pills-education" type="button" role="tab" aria-controls="v-pills-education" aria-selected="false">education</button>
+                        <button class="nav-link text-capitalize" id="v-pills-projects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-projects" type="button" role="tab" aria-controls="v-pills-projects" aria-selected="false">projects</button>
+                        <button class="nav-link text-capitalize" id="v-pills-misc-tab" data-bs-toggle="pill" data-bs-target="#v-pills-misc" type="button" role="tab" aria-controls="v-pills-misc" aria-selected="false">misc</button>
                     </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab" tabindex="0">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <p class="card-text text-justify">
+                                        I've worked as a software developer and in IT-support for a year. 
+                                        My work consisted of REST.API and ASP.NET projects and providing support for them in both finnish and english. 
+                                        My strenghts are frontend and database developement. 
+                                        I've bachelors in information technology and I'll start my computer science masters studies in autumun 2024.<br><br>
+                                        You can also view and download my personal <a href="files/nima-razi-resume.pdf" target="_blank" rel="noopener noreferrer">Resume.</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-experience" role="tabpanel" aria-labelledby="v-pills-experience-tab" tabindex="0">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>Software Developer</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-body-light"> @Cash-In Consulting</h6>
+                                    <p class="card-text">05.2023 - 10.2023
+                                        <ul>
+                                            <li>ASP.NET developement with HTML, CSS, JavaScript and C#</li>
+                                            <li>database design and developement in Oracle SQL</li>
+                                            <li>IT-support</li>
+                                            <li>tools included Visual Studio, Git, Microsoft IIS, etc.</li>
+                                        </ul>
+                                    </p><br>
+                                    <h5 class="card-title"><strong>Software Developer</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-body-light"> @Pilvilampi Software</h6>
+                                    <p class="card-text">01.2022 - 08.2022
+                                        <ul>
+                                            <li>REST.API developement with HTML, CSS, JavaScript, PHP and SQL</li>
+                                            <li>IT-support in finnish and english</li>
+                                            <li>tools included Visual Studio Code, Power Automate, PowerShell, SharePoint, etc.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-education" role="tabpanel" aria-labelledby="v-pills-education-tab" tabindex="0">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong>Computer Science, M.Sc. Economics</strong> <span class="badge">New</span></h5>
+                                    <h6 class="card-subtitle mb-2 text-body-light">@University of Vaasa</h6>
+                                    <p class="card-text">starts in 09.2024 </p><br>
+                                    <h5 class="card-title"><strong>Bachelor of Business Administration, Business Information Technology</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-body-light">@Vaasa University of Applied Sciences</h6>
+                                    <p class="card-text">08.2018 - 12.2022</p><br>
+                                    <h5 class="card-title"><strong>Matriculation Examination</strong></h5>
+                                    <h6 class="card-subtitle mb-2 text-body-light">@Tampere High School of Technology</h6>
+                                    <p class="card-text">08.2012 - 12.2016
+                                        <ul>
+                                            <li>Sports scolarship</li>
+                                            <li>B2 english</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab" tabindex="0">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <p class="card-text text-justify">In each project I focus on different implementations such as language switcher, a shared navbar and footer between sites, search queries, etc. <strong>All are constantly under work.</strong></p>
+                                    <p class="card-text">
+                                        <ul>
+                                            <li><a class="text-decoration-none" href="razaghi-enhancements/home.html">Razaghienhancements</a></li>
+                                            <li><a class="text-decoration-none" href="leipatehdas/home.html">Leipätehdas</a></li>
+                                            <li><a class="text-decoration-none" href="pelimies.com/home.html">Pelimies.com</a></li>
+                                            <li><a class="text-decoration-none" href="lemonsoft-stadion/home.html">Lemonsoft Stadium</a></li>
+                                        </ul>
+                                    </p>
+                                    <p>Feel free to send <a class="text-decoration-none" href="mailto:nima.razi@hotmail.com">feedback!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-misc" role="tabpanel" aria-labelledby="v-pills-misc-tab" tabindex="0">
+                            <div class="card shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize"><strong>languages</strong></h5>
+                                    <p class="card-text">finnish, english, persian, kurdish & swedish</p>
+                                    <h5 class="card-title text-capitalize"><strong>conscription service</strong></h5>
+                                    <p class="card-text text-capitalize">pori brigade 2017</p>
+                                    <h5 class="card-title text-capitalize"><strong>certificates</strong></h5>
+                                    <p class="card-text">B drivers license (EU)</p>
+                                    <h5 class="card-title text-capitalize"><strong>Links</strong></h5>
+                                    <p class="card-text">
+                                        <ul>
+                                            <li><a href="https://www.linkedin.com/in/nimarazi" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                                            <li><a href="https://github.com/nima-razi" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Software Developer</strong></h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">01.2022 - 08.2022 @Pilvilampi Software</h6>
-                        <p class="card-text">
-                            <ul>
-                                <li>REST.API developement with HTML, CSS, JavaScript, PHP and SQL</li>
-                                <li>IT-support in finnish and english</li>
-                                <li>tools included Visual Studio Code, Power Automate, PowerShell, SharePoint, etc.</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid col-md-8 py-4">
-        <h1 id="scrollspyEducation" class="display-4">Education</h1>
-        <div class="row row-cols-1 g-2">
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Computer Science, M.Sc. Economics</strong> <span class="badge text-bg-danger">New</span></h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">starts in 09.2024 @University of Vaasa</h6>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Bachelor of Business Administration, Business Information Technology</strong></h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">08.2018 - 12.2022 @Vaasa University of Applied Sciences</h6>
-                        <p class="card-text"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Matriculation Examination</strong></h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">08.2012 - 12.2016 @Tampere High School of Technology</h6>
-                        <p class="card-text">
-                            <ul>
-                                <li>Sports scolarship</li>
-                                <li>B2 english</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid col-md-8 py-4">
-        <h1 id="scrollspyProjects" class="display-4">Projects</h1>
-        <div class="row">
-            <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">In each project I focus on different implementations such as language switcher, a shared navbar and footer between sites, search queries, etc. <strong>All are constantly under work.</strong></p>
-                        <p class="card-text">
-                            <ul>
-                                <li><a class="text-decoration-none" href="razaghi-enhancements/home.html">Razaghienhancements</a></li>
-                                <li><a class="text-decoration-none" href="leipatehdas/home.html">Leipätehdas</a></li>
-                                <li><a class="text-decoration-none" href="pelimies.com/home.html">Pelimies.com</a></li>
-                                <li><a class="text-decoration-none" href="lemonsoft-stadion/home.html">Lemonsoft Stadium</a></li>
-                            </ul>
-                        </p>
-                        <p>Feel free to send <a class="text-decoration-none" href="mailto:nima.razi@hotmail.com">feedback!</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid col-md-8 py-4">
-        <h1 id="scrollspyMiscellaneous" class="display-4">Miscellaneous</h1>
-        <div class="accordion" id="accordionPanelsStayOpen">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseLanguages" aria-expanded="true" aria-controls="panelsStayOpen-collapseLanguages">
-                        Languages
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseLanguages" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                        <p>finnish, english, persian, kurdish & swedish</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseLicense" aria-expanded="false" aria-controls="panelsStayOpen-collapseLicense">
-                        Certificates
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseLicense" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <p>Drivers License, B-class (EU)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseService" aria-expanded="false" aria-controls="panelsStayOpen-collapseService">
-                        Conscription Service
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseService" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <p>Pori Brigade, 2017</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="container-fluid text-center bg-dark py-4">
-        <div class="hstack gap-3 justify-content-center">
-            <div class="p-2">
-                <a href="https://github.com/nima-razi">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="p-2">
-                <a href="https://www.linkedin.com/in/nimarazi/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="p-2">
-                <a href="mailto:nima.razi@hotmail.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
-                        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
-                        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
-                    </svg>
-                </a>
-            </div>
-        </div>  
-    </footer>
+        </div>   
+    </div>    
 </body>
 </html>
 
