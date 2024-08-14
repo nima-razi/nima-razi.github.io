@@ -2,7 +2,6 @@ $(function(){
     $("#nav").load("nav.html");
     $("#footer").load("footer.html"); 
 });
-
 // Search button function
 function myFunction() { 
     const searchQuery = document.getElementById('mySearch').value.toLowerCase();
@@ -23,7 +22,6 @@ function myFunction() {
         alert('No results found.');
     }
 }
-
 // Search results display
 function displayResults() {
     const results = JSON.parse(localStorage.getItem('searchResults'));
@@ -41,5 +39,4 @@ function displayResults() {
         resultsContainer.innerHTML = '<p>No results found.</p>';
     }
 }
-
 document.addEventListener('DOMContentLoaded', displayResults);
