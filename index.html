@@ -4,27 +4,47 @@
     <link rel="shortcut icon" href="images/ghost.ico" type="image/x-icon">
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#767cc7">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#767cc7">
+    <meta name="theme-color" content="#ccc">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ccc">
     <title>Nima Razi - Web Portofolio</title>
     <link rel="stylesheet" href="style/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/css/style.css">
 </head>
 <body>
+    <video autoplay muited loop id="myVideo">
+        <source src="videos/loop.webm" type="video/webm">
+    </video>
     <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-6">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="nav flex-column me-3 shadow-sm rounded" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link text-capitalize active" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" type="button" role="tab" aria-controls="v-pills-about" aria-selected="true">about</button>
-                        <button class="nav-link text-capitalize" id="v-pills-experience-tab" data-bs-toggle="pill" data-bs-target="#v-pills-experience" type="button" role="tab" aria-controls="v-pills-experience" aria-selected="false">experience</button>
-                        <button class="nav-link text-capitalize" id="v-pills-education-tab" data-bs-toggle="pill" data-bs-target="#v-pills-education" type="button" role="tab" aria-controls="v-pills-education" aria-selected="false">education</button>
-                        <button class="nav-link text-capitalize" id="v-pills-projects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-projects" type="button" role="tab" aria-controls="v-pills-projects" aria-selected="false">projects</button>
-                        <button class="nav-link text-capitalize" id="v-pills-misc-tab" data-bs-toggle="pill" data-bs-target="#v-pills-misc" type="button" role="tab" aria-controls="v-pills-misc" aria-selected="false">misc</button>
+        <div class="row align-items-center">
+            <div class="d-md-flex justify-content-center align-items-center">
+                <div class="col-12 col-md-auto me-md-2 mb-2">
+                    <div class="nav flex-md-column flex-row shadow rounded py-3 justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link text-capitalize active" id="v-pills-about-tab" data-bs-toggle="pill" data-bs-target="#v-pills-about" type="button" role="tab" aria-controls="v-pills-about" aria-selected="true">
+                            <img class="d-md-none d-block" src="images/circle-info-solid.svg" alt="img">
+                            <span class="d-md-block d-none">about</span>
+                        </button>
+                        <button class="nav-link text-capitalize" id="v-pills-experience-tab" data-bs-toggle="pill" data-bs-target="#v-pills-experience" type="button" role="tab" aria-controls="v-pills-experience" aria-selected="false">
+                            <img class="d-md-none d-block" src="images/briefcase-solid.svg" alt="img">
+                            <span class="d-md-block d-none">experience</span>
+                        </button>
+                        <button class="nav-link text-capitalize" id="v-pills-education-tab" data-bs-toggle="pill" data-bs-target="#v-pills-education" type="button" role="tab" aria-controls="v-pills-education" aria-selected="false">
+                            <img class="d-md-none d-block" src="images/user-graduate-solid.svg" alt="img">
+                            <span class="d-md-block d-none">education</span>
+                        </button>
+                        <button class="nav-link text-capitalize" id="v-pills-projects-tab" data-bs-toggle="pill" data-bs-target="#v-pills-projects" type="button" role="tab" aria-controls="v-pills-projects" aria-selected="false">
+                            <img class="d-md-none d-block" src="images/folder-open-solid.svg" alt="img">
+                            <span  class="d-md-block d-none">projects</span>
+                        </button>
+                        <button class="nav-link text-capitalize" id="v-pills-misc-tab" data-bs-toggle="pill" data-bs-target="#v-pills-misc" type="button" role="tab" aria-controls="v-pills-misc" aria-selected="false">
+                            <img class="d-md-none d-block" src="images/cubes-stacked-solid.svg" alt="img">
+                            <span  class="d-md-block d-none">misc</span>
+                        </button>
                     </div>
+                </div>
+                <div class="col-12 col-md-6">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab" tabindex="0">
-                            <div class="card shadow-sm">
+                            <div class="card shadow py-3 px-3">
                                 <div class="card-body">
                                     <p class="card-text text-justify">
                                         I've worked as a software developer and in IT-support for a year. 
@@ -37,11 +57,11 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-experience" role="tabpanel" aria-labelledby="v-pills-experience-tab" tabindex="0">
-                            <div class="card shadow-sm">
+                            <div class="card shadow py-3 px-3">
                                 <div class="card-body">
                                     <h5 class="card-title"><strong>Software Developer</strong></h5>
-                                    <h6 class="card-subtitle mb-2 text-body-light"> @Cash-In Consulting</h6>
-                                    <p class="card-text">05.2023 - 10.2023
+                                    <h6 class="card-subtitle mb-2 text-body-light">05.2023 - 10.2023 @Cash-In Consulting</h6>
+                                    <p class="card-text">
                                         <ul>
                                             <li>ASP.NET developement with HTML, CSS, JavaScript and C#</li>
                                             <li>database design and developement in Oracle SQL</li>
@@ -50,8 +70,8 @@
                                         </ul>
                                     </p><br>
                                     <h5 class="card-title"><strong>Software Developer</strong></h5>
-                                    <h6 class="card-subtitle mb-2 text-body-light"> @Pilvilampi Software</h6>
-                                    <p class="card-text">01.2022 - 08.2022
+                                    <h6 class="card-subtitle mb-2 text-body-light">01.2022 - 08.2022 @Pilvilampi Software</h6>
+                                    <p class="card-text">
                                         <ul>
                                             <li>REST.API developement with HTML, CSS, JavaScript, PHP and SQL</li>
                                             <li>IT-support in finnish and english</li>
@@ -62,17 +82,17 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-education" role="tabpanel" aria-labelledby="v-pills-education-tab" tabindex="0">
-                            <div class="card shadow-sm">
+                            <div class="card shadow py-3 px-3">
                                 <div class="card-body">
                                     <h5 class="card-title"><strong>Computer Science, M.Sc. Economics</strong> <span class="badge">New</span></h5>
-                                    <h6 class="card-subtitle mb-2 text-body-light">@University of Vaasa</h6>
-                                    <p class="card-text">starts in 09.2024 </p><br>
+                                    <h6 class="card-subtitle mb-2 text-body-light">starts in 09.2024 @University of Vaasa</h6>
+                                    <p class="card-text"></p><br>
                                     <h5 class="card-title"><strong>Bachelor of Business Administration, Business Information Technology</strong></h5>
-                                    <h6 class="card-subtitle mb-2 text-body-light">@Vaasa University of Applied Sciences</h6>
-                                    <p class="card-text">08.2018 - 12.2022</p><br>
+                                    <h6 class="card-subtitle mb-2 text-body-light">08.2018 - 12.2022 @Vaasa University of Applied Sciences</h6>
+                                    <p class="card-text"></p><br>
                                     <h5 class="card-title"><strong>Matriculation Examination</strong></h5>
-                                    <h6 class="card-subtitle mb-2 text-body-light">@Tampere High School of Technology</h6>
-                                    <p class="card-text">08.2012 - 12.2016
+                                    <h6 class="card-subtitle mb-2 text-body-light">08.2012 - 12.2016 @Tampere High School of Technology</h6>
+                                    <p class="card-text">
                                         <ul>
                                             <li>Sports scolarship</li>
                                             <li>B2 english</li>
@@ -82,7 +102,7 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab" tabindex="0">
-                            <div class="card shadow-sm">
+                            <div class="card shadow py-3 px-3">
                                 <div class="card-body">
                                     <p class="card-text text-justify">In each project I focus on different implementations such as language switcher, a shared navbar and footer between sites, search queries, etc. <strong>All are constantly under work.</strong></p>
                                     <p class="card-text">
@@ -98,7 +118,7 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-misc" role="tabpanel" aria-labelledby="v-pills-misc-tab" tabindex="0">
-                            <div class="card shadow-sm">
+                            <div class="card shadow py-3 px-3">
                                 <div class="card-body">
                                     <h5 class="card-title text-capitalize"><strong>languages</strong></h5>
                                     <p class="card-text">finnish, english, persian, kurdish & swedish</p>
@@ -116,11 +136,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                
-                </div>
+                    </div>
+                </div>  
             </div>
-        </div>   
-    </div>    
+        </div>
+    </div>
 </body>
 </html>
 

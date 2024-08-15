@@ -1,47 +1,33 @@
 @font-face {
-    font-family: 'Coustard';
+    font-family: 'Montserrat';
     src: url('/style/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
     src: url('/style/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
-body {
-    font-family: 'Coustard', sans-serif;
-    background-image: url('/images/background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body { font-family: 'Montserrat', sans-serif; } 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
-.container-fluid {
-    height: 100vh;
-}
-.row {
-    height: 100%;
-}
-.text-justify {
-    text-align: justify;
-}
+.container-fluid { height: 100vh; }
+.row { height: 100%; }
+.text-justify { text-align: justify; }
 .card {
-    border: 1px solid #bbb;
+    border: none;
     color: #eee;
     background: inherit;
     backdrop-filter: blur(30px);
 }
 .nav {
-    border: 1px solid #bbb;
+    border: none;
     background: inherit;
     backdrop-filter: blur(30px);
 }
-.nav-link {
-    color: #eee;
-}
-.nav-link:hover {
-    color: #ccc;
-}
-a {
-    color: #eee;
-} 
-a:hover {
-    color: #ccc;
-}
-.badge {
-    background-color: yellowgreen;
-}
+.nav-link { color: #eee; }
+.nav-link:hover { color: #aaa; }
+a { color: #eee; } 
+a:hover { color: #aaa; }
+.badge { background-color: #c7c97c; }
+.nav-link.active:focus { color: #aaa; }
