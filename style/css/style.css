@@ -1,4 +1,8 @@
-@font-face { font-family: 'Montserrat';src: url('/style/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');src: url('/style/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');}
+@font-face { 
+    font-family: 'Montserrat';
+    src: url('/style/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('/style/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
 body { font-family: 'Montserrat', sans-serif; } 
 #myVideo { 
     right: 0;
@@ -9,12 +13,14 @@ body { font-family: 'Montserrat', sans-serif; }
 .container-fluid { height: 100vh; }
 .text-justify { text-align: justify; }
 .card { 
+    border: 1px solid #505050;
     color: #eee;
     background: inherit;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 }
 .nav { 
+    border: 1px solid #505050;
     background: inherit;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px); 
@@ -23,5 +29,4 @@ body { font-family: 'Montserrat', sans-serif; }
 .nav-link:hover { color: #aaa; }
 a { color: #eee; } 
 a:hover { color: #aaa; }
-.badge { background-color: #c7c97c; }
 .nav-link.active:focus { color: #aaa; }
