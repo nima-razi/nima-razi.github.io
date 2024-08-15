@@ -40,9 +40,7 @@
     font-weight: 100;
     font-style: normal;
 }
-body {
-    font-family: 'Barlow Condensed', sans-serif;
-}
+body { font-family: 'Barlow Condensed', sans-serif; }
 .black-overlay {
     position: absolute;
     top: 0px;
@@ -61,9 +59,7 @@ body {
     width: 100%;
     padding: 0 15px; /* For some padding on smaller screens */
 }
-.carousel-caption > h1 {
-    font-size: 8vw;
-}
+.carousel-caption > h1 { font-size: 8vw; }
 .gallery-box {
     padding: 0;
     height: 500px; /* Adjust the height as needed */
@@ -76,12 +72,6 @@ body {
     object-fit: cover; /* This ensures the image covers the entire container */
     transform: scale(1);
 }
-.gallery-box:hover > img {
-    transform: scale(1.1);
-}
-footer a {
-    color: #fff;
-}
-footer a:hover {
-    color: #ccc;
-}
+.gallery-box:hover > img { transform: scale(1.1); }
+footer a { color: #fff; }
+footer a:hover { color: #ccc; }

@@ -4,9 +4,7 @@
     src: url('/leipatehdas/style/Lora/Lora-Italic-VariableFont_wght.ttf')format('truetype');
     src: url('/leipatehdas/style/Lora/Lora-VariableFont_wght.ttf')format('truetype');
 }
-body {
-    font-family: 'Lora', sans-serif;
-}
+body { font-family: 'Lora', sans-serif; }
 .card img{
     height: 18rem;
     width: 100%; /* Ensure the image takes up the full width of the card */
@@ -16,9 +14,7 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
-footer a:hover {
-    color: #ccc;
-}
+footer a:hover { color: #ccc; }
 .btn-primary {
 	--bs-btn-color: #fff;
 	--bs-btn-bg: #ad2f00;
@@ -68,9 +64,5 @@ video {
 	position: relative;
 	z-index: 0;
 }
-.text-overlay {
-	z-index: 2; /* Make sure text is above the overlay */
-}
-.text-justify {
-    text-align: justify;
-}
+.text-overlay { z-index: 2; /* Make sure text is above the overlay */ }
+.text-justify { text-align: justify; }

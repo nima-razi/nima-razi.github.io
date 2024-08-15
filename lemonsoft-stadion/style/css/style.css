@@ -3,12 +3,8 @@
     src: url('/lemonsoft-stadion/style/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
     src: url('/lemonsoft-stadion/style/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
-body {
-    font-family: "Montserrat", sans-serif;
-}
-.carousel-item {
-  position: relative;
-}
+body { font-family: "Montserrat", sans-serif; }
+.carousel-item { position: relative; }
 .carousel-overlay {
   position: absolute;
   top: 0;
@@ -30,12 +26,10 @@ body {
   z-index: 2;
 }
 .btn-outline-secondary.active {
-    background-color: #f8c121; /* lemonsoft brand color */
-    color: #fff;
+  background-color: #f8c121; /* lemonsoft brand color */
+  color: #fff;
 }
-footer {
-    background-color: #f8c121;
-}
+footer { background-color: #f8c121; }
 .card-lemonsoft-primary{ 
   --bs-card-spacer-y: 1rem;
   --bs-card-spacer-x: 1rem;
@@ -72,7 +66,6 @@ footer {
   border-top-left-radius: none;
   border-top-right-radius: none;
 }
-
 .btn-lemonsoft-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #333333;
@@ -90,9 +83,5 @@ footer {
   --bs-btn-disabled-bg: #333333;
   --bs-btn-disabled-border-color: #333333;
 }
-footer a {
-  color: #fff;
-}
-footer a:hover {
-  color: #eee;
-}
+footer a { color: #fff; }
+footer a:hover { color: #eee; }
