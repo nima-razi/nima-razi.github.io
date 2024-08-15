@@ -3,7 +3,10 @@
     src: url('/style/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
     src: url('/style/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
-body { font-family: 'Montserrat', sans-serif; } 
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #000; 
+} 
 #myVideo { 
     right: 0;
     bottom: 0;
