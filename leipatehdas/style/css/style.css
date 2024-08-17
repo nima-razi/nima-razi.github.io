@@ -7,12 +7,9 @@
 body { font-family: 'Lora', sans-serif; }
 .card img{
     height: 18rem;
-    width: 100%; /* Ensure the image takes up the full width of the card */
-    object-fit: contain; 
 }
 footer a {
     color: #fff;
-    text-decoration: none;
 }
 footer a:hover { color: #ccc; }
 .btn-primary {
@@ -47,22 +44,7 @@ footer a:hover { color: #ccc; }
 	--bs-btn-disabled-border-color: #f8f9fa;
 	--bs-gradient: none;
 }
-.position-relative {
-	position: relative;
-	overflow: hidden;
-}
 .overlay {
 	background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
 }
-video {
-	position: relative;
-	z-index: 0;
-}
-.text-overlay { z-index: 2; /* Make sure text is above the overlay */ }
 .text-justify { text-align: justify; }
