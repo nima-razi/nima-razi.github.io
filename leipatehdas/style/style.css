@@ -1,8 +1,8 @@
 /* This begins personal changes */
 @font-face {
     font-family: 'Lora';
-    src: url('/leipatehdas/style/Lora/Lora-Italic-VariableFont_wght.ttf')format('truetype');
-    src: url('/leipatehdas/style/Lora/Lora-VariableFont_wght.ttf')format('truetype');
+    src: url('/leipatehdas/assets/Lora/Lora-Italic-VariableFont_wght.ttf')format('truetype');
+    src: url('/leipatehdas/assets/Lora/Lora-VariableFont_wght.ttf')format('truetype');
 }
 body { font-family: 'Lora', sans-serif; }
 .card img{

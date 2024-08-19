@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('/lemonsoft-stadion/style/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-    src: url('/lemonsoft-stadion/style/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Montserrat';
+  src: url('/lemonsoft-stadion/assets/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  src: url('/lemonsoft-stadion/assets/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 body { font-family: "Montserrat", sans-serif; }
 .carousel-overlay {

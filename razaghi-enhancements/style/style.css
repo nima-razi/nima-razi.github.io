@@ -1,42 +1,42 @@
 @font-face {
     font-family: 'Barlow Condensed';
-    src: url('/razaghi-enhancements/style/Barlow_Condensed/BarlowCondensed-Black.ttf') format('truetype');
+    src: url('/razaghi-enhancements/assets/Barlow_Condensed/BarlowCondensed-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 @font-face {
     font-family: 'Barlow Condensed';
-    src: url('/razaghi-enhancements/style/Barlow_Condensed/BarlowCondensed-Bold.ttf') format('truetype');
+    src: url('/razaghi-enhancements/assets/Barlow_Condensed/BarlowCondensed-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Barlow Condensed';
-    src: url('/razaghi-enhancements/style/Barlow_Condensed/BarlowCondensed-Light.ttf') format('truetype');
+    src: url('/razaghi-enhancements/assets/Barlow_Condensed/BarlowCondensed-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Barlow Condensed';
-    src: url('/razaghi-enhancements/style/Barlow_Condensed/BarlowCondensed-Medium.ttf') format('truetype');
+    src: url('/razaghi-enhancements/assets/Barlow_Condensed/BarlowCondensed-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Barlow Condensed';
-    src: url('/razaghi-enhancements/style/Barlow_Condensed/BarlowCondensed-Regular.ttf') format('truetype');
+    src: url('/razaghi-enhancements/assets/Barlow_Condensed/BarlowCondensed-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'Barlow Condensed';
-    src: url('/razaghi-enhancements/style/Barlow_Condensed/BarlowCondensed-SemiBold.ttf') format('truetype');
+    src: url('/razaghi-enhancements/assets/Barlow_Condensed/BarlowCondensed-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'Barlow Condensed';
-    src: url('/razaghi-enhancements/style/Barlow_Condensed/BarlowCondensed-Thin.ttf') format('truetype');
+    src: url('/razaghi-enhancements/assets/Barlow_Condensed/BarlowCondensed-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }

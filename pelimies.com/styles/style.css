@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Archivo';
-    src: url('/pelimies.com/style/Archivo/Archivo-Italic-VariableFont_wdth,wght.ttf') format('truetype');
-    src: url('/pelimies.com/style/Archivo/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('assets/style/Archivo/Archivo-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+    src: url('assets/Archivo/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
 }
 body {
     font-family: 'Archivo', sans-serif;
