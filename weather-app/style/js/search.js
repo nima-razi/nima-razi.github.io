@@ -1,6 +1,14 @@
+// Clear the input field on page load
+window.onload = function() {
+    document.getElementById('city').value = '';
+};
+
 function getWeather() {
     const apiKey = 'a2ed853528c8c6416f230af509878eac';
-    const city = document.getElementById('city').value;
+    let cityInput = document.getElementById('city').value;
+    
+    // Extract the city name before the comma
+    const city = cityInput.split(',')[0].trim();
 
     if (!city) {
         alert('Please enter a city');
@@ -86,55 +94,3 @@ function showImage() {
     const weatherIcon = document.getElementById('weather-icon');
     weatherIcon.style.display = 'block';
 }
-
-/* function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition, showError);
-    } else {
-        alert("Geolocation is not supported by this browser.");
-    }
-}
-
-function showPosition(position) {
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-
-    // Use reverse geocoding to get the city name
-    reverseGeocode(latitude, longitude);
-}
-
-function reverseGeocode(latitude, longitude) {
-    // Using OpenStreetMap's Nominatim reverse geocoding service
-    const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=10&addressdetails=1`;
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            if (data && data.address && data.address.city) {
-                document.getElementById("locationInput").value = data.address.city;
-            } else {
-                alert("City not found.");
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert("Unable to retrieve location.");
-        });
-}
-
-function showError(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            alert("User denied the request for Geolocation.");
-            break;
-        case error.POSITION_UNAVAILABLE:
-            alert("Location information is unavailable.");
-            break;
-        case error.TIMEOUT:
-            alert("The request to get user location timed out.");
-            break;
-        case error.UNKNOWN_ERROR:
-            alert("An unknown error occurred.");
-            break;
-    }
-} */

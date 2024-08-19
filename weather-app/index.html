@@ -25,17 +25,16 @@
                 </div>
             </div>
             <div class="input-group mt-3">
-                <!-- <button class="btn btn-outline-secondary" type="button" id="search-via-location" onclick="getLocation()"></button> -->
-                 <input type="text" class="form-control" id="city" autofocus>
-                 <button class="btn btn-secondary" type="button" id="search-via-input" onclick="getWeather()"></button>
-                </div>
-
-                <div class="vstack justify-content-center align-items-center">
-                    <img class="img-fluid" id="weather-icon">
-                    <div id="temp-div"></div>
-                    <div id="weather-info"></div>
-                    <div class="hstack overflow-scroll" id="hourly-forecast"></div>
-                </div>
+                <button class="btn btn-outline-secondary" type="button" id="search-via-location" onclick="getLocation()"></button>
+                <input type="text" class="form-control" id="city" list="city-list" autofocus>
+                <datalist id="city-list"></datalist>
+                <button class="btn btn-secondary" type="button" id="search-via-input" onclick="getWeather()"></button>
+            </div>
+            <div class="vstack justify-content-center align-items-center">
+                <img class="img-fluid" id="weather-icon">
+                <div id="temp-div"></div>
+                <div id="weather-info"></div>
+                <div class="hstack overflow-scroll justify-content-between" id="hourly-forecast"></div>
             </div>
         </div>
     </div>
@@ -43,5 +42,7 @@
 </html>
 
 <script src="/weather-app/style/js/bootstrap.bundle.min.js"></script>
-<script src="/weather-app/style/js/script.js"></script>
+<script src="/weather-app/style/js/search.js"></script>
 <script src="/weather-app/style/js/translations.js"></script>
+<script src="/weather-app/style/js/city-list.js"></script>
+<script src="/weather-app/style/js/locate.js"></script>
