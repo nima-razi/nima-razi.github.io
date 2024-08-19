@@ -1,6 +1,6 @@
 let citiesData = {};
 
-fetch('/weather-app/style/countries.min.json')
+fetch('scripts/countries.min.json')
 .then(response => response.json())
 .then(data => {
     citiesData = data;
