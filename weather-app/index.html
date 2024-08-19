@@ -3,35 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
     <title id="page-title"></title>
-    <link rel="stylesheet" href="style/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="icon" href="/weather-app/icons8-sun-doodle-120.png" type="image/png"/>
+    <link rel=”mask-icon” href="/weather-app/icons8-sun-doodle-120.png" color="#000">
+    <link rel="apple-touch-icon" href="/weather-app/icons8-sun-doodle-180.png">
+    <link rel="shortcut icon" href="/weather-app/icons8-sun-doodle-120.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="/weather-app/style/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/weather-app/style/css/style.css">
 </head>
-<body>
-    <div class="container-fluid justify-content-center align-items-center">
-        <div class="hstack justify-content-between">
-            <div class=""><h1 id="container-title"></h1></div>
-            <div class="btn-group" role="group">
-                <button type="button" class="btn btn-outline-secondary" id="btn-fi">FI</button>
-                <button type="button" class="btn btn-outline-secondary" id="btn-en">EN</button>
-                <button type="button" class="btn btn-outline-secondary" id="btn-se">SE</button>
+<body class="bg-dark text-light">
+    <div class="container-sm d-flex justify-content-center align-items-center vh-100">
+        <div class="w-100">
+            <div class="hstack justify-content-between mb-4">
+                <h1 id="container-title"></h1>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-secondary" id="btn-fi">FI</button>
+                    <button type="button" class="btn btn-outline-secondary" id="btn-en">EN</button>
+                    <button type="button" class="btn btn-outline-secondary" id="btn-se">SE</button>
+                </div>
             </div>
-        </div>
-        <div class="input-group">
-            <!-- <button class="btn btn-outline-secondary" type="button" id="search-via-location" onclick="getLocation()"></button> -->
-            <input type="text" class="form-control" id="city" placeholder="">
-            <button class="btn btn-outline-secondary" type="button" id="search-via-input" onclick="getWeather()"></button>
-        </div>
+            <div class="input-group mt-3">
+                <!-- <button class="btn btn-outline-secondary" type="button" id="search-via-location" onclick="getLocation()"></button> -->
+                 <input type="text" class="form-control" id="city" placeholder="">
+                 <button class="btn btn-secondary" type="button" id="search-via-input" onclick="getWeather()"></button>
+                </div>
 
-        <div class="vstack justify-content-center align-items-center">
-            <img class="img-fluid" id="weather-icon" alt="Weather Icon">
-            <div id="temp-div"></div>
-            <div id="weather-info"></div>
-            <div class="hstack justify-content-center align-items-center" id="hourly-forecast"></div>
+                <div class="vstack justify-content-center align-items-center">
+                    <img class="img-fluid" id="weather-icon">
+                    <div id="temp-div"></div>
+                    <div id="weather-info"></div>
+                    <div class="hstack justify-content-center" id="hourly-forecast"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 </html>
 
-<script src="style/js/bootstrap.bundle.min.js"></script>
-<script src="style/js/script.js"></script>
+<script src="/weather-app/style/js/bootstrap.bundle.min.js"></script>
+<script src="/weather-app/style/js/script.js"></script>
+<script src="/weather-app/style/js/translations.js"></script>
