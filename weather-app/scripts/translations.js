@@ -67,5 +67,5 @@ document.getElementById('btn-' + language).classList.add('active');
 
 // Set default language to English on initial load
 document.addEventListener('DOMContentLoaded', function() {
-    switchLanguage('fi');
+    switchLanguage('en');
 });
