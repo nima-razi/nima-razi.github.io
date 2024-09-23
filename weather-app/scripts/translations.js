@@ -42,7 +42,7 @@ function switchLanguage(language) {
             element.textContent = translations[language][key];
         }
     });
-}
+};
 
 function switchLanguage(language) {
     const inputField = document.getElementById('city');
@@ -63,7 +63,7 @@ document.querySelectorAll('.btn-outline-secondary').forEach(function(button) {
 
 // Add active class to the selected button
 document.getElementById('btn-' + language).classList.add('active');
-}
+};
 
 // Set default language to English on initial load
 document.addEventListener('DOMContentLoaded', function() {
