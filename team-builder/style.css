@@ -1,0 +1,32 @@
+#team1, #team2 {
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+@font-face {
+    font-family: cs_regular;
+    src: url('cs_regular.ttf');
+}
+@font-face {
+    font-family: SourceSans3;
+    src: url('SourceSans3-VariableFont_wght.ttf');
+}
+body {
+    background-color: #3a476a!important;
+    color: #fff!important;
+    font-family: Tahoma, Verdana, SourceSans3!important;
+}
+h4 {
+    font-family: cs_regular!important;
+}
+#team1 {
+    background-color: #d45500;
+}
+#team2 {
+    background-color: #303358;
+}
+#team1 li, #team2 li {
+    background-color: transparent!important;
+    border: none;
+    color: inherit;
+}
