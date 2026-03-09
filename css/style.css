@@ -1,0 +1,34 @@
+ h1 {
+    /* <weight>: Use a value from 100 to 900 */
+    font-family: "Raleway", sans-serif;
+}
+h2 {
+    /* <weight>: Use a value from 100 to 900 */
+    font-family: "Raleway", sans-serif;
+}
+p {
+    /* <weight>: Use a value from 300 to 900 */
+    font-family: "Merriweather", serif;
+}
+[id^="scroll"] { /* Target every ID that starts with "scroll" */
+    scroll-margin-top: 75px; /* Adjust this value to match your navbar height */
+}
+#text::after {
+content: "|";
+animation: blink 0.7s infinite;
+}
+@keyframes blink {
+0%, 100% { opacity: 1; }
+50% { opacity: 0; }
+}
+/* Initial state: hidden and 30px lower */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out; /* Controls how smooth the fade is */
+}
+/* State when the section enters the view */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
