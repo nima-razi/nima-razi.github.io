@@ -1,18 +1,105 @@
- h1 {
-    /* <weight>: Use a value from 100 to 900 */
-    font-family: "Raleway", sans-serif;
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
-h2 {
-    /* <weight>: Use a value from 100 to 900 */
-    font-family: "Raleway", sans-serif;
+
+h1, h2, h3, .navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
-p {
-    /* <weight>: Use a value from 300 to 900 */
-    font-family: "Merriweather", serif;
+
+/* Use the mono font for technical details */
+.card-subtitle, .card-text ul li {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
 }
-[id^="scroll"] { /* Target every ID that starts with "scroll" */
-    scroll-margin-top: 75px; /* Adjust this value to match your navbar height */
+:root {
+    /* Main Background & Surfaces */
+    --bs-body-bg: #0b0e14;
+    --bs-body-color: #f8fafc;
+    --bs-tertiary-bg: #161b22; /* Cards/Nav */
+    
+    /* Brand Colors */
+    --bs-primary: #7c3aed;
+    --bs-primary-rgb: 124, 58, 237;
+    
+    /* Link Colors */
+    --bs-link-color: #2dd4bf;
+    --bs-link-hover-color: #5eead4;
 }
+
+/* Card Styling for Depth */
+.card {
+    background-color: var(--bs-tertiary-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-body-secondary {
+    color: #94a3b8 !important;
+}
+
+.btn-primary {
+    --bs-btn-bg: #7c3aed;
+    --bs-btn-border-color: #7c3aed; 
+    --bs-btn-hover-bg: #6d28d9;
+    --bs-btn-hover-border-color: #6d28d9;
+    --bs-btn-focus-shadow-rgb: 124, 58, 237; 
+}
+
+.btn-primary:hover {
+    background-color: #6d28d9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+}
+
+footer a.text-decoration-none {
+    color: #7c3aed !important; 
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+footer a.text-decoration-none:hover {
+    color: #2dd4bf !important; 
+    transform: translateY(-3px); 
+}
+
+/* 1. Target the SVG specifically to override inheritance */
+footer a svg {
+    fill: #7c3aed !important; /* Your Primary Violet */
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+/* 2. Target the hover state with high specificity */
+footer a:hover svg {
+    fill: #2dd4bf !important; /* Your Teal - replaces the light blue */
+    transform: translateY(-3px);
+}
+
+/* 3. Kill the 'blue glow' outline if you click the icon */
+footer a:focus, 
+footer a:active {
+    outline: none !important;
+    box-shadow: none !important;
+    color: #2dd4bf !important;
+}
+
+a {
+    --bs-link-color-rgb: 45, 212, 191; 
+    --bs-link-hover-color-rgb: 94, 234, 212;
+}
+
+.bi-github, .bi-linkedin {
+    color: var(--bs-primary);
+    transition: color 0.3s ease;
+}
+
+.bi-github:hover, .bi-linkedin:hover {
+    color: var(--bs-link-color); 
+}
+
+[id^="scroll"] { 
+    scroll-margin-top: 75px; 
+}
+
 #text::after {
 content: "|";
 animation: blink 0.7s infinite;
@@ -21,13 +108,13 @@ animation: blink 0.7s infinite;
 0%, 100% { opacity: 1; }
 50% { opacity: 0; }
 }
-/* Initial state: hidden and 30px lower */
+
 .reveal {
     opacity: 0;
     transform: translateY(30px);
-    transition: all 0.8s ease-out; /* Controls how smooth the fade is */
+    transition: all 0.8s ease-out; 
 }
-/* State when the section enters the view */
+
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
