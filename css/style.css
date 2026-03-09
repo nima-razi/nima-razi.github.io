@@ -75,17 +75,18 @@ a {
     scroll-margin-top: 75px; 
 }
 #text::after {
-content: "|";
-animation: blink 0.7s infinite;
+    content: "|";
+    animation: blink 0.7s infinite;
 }
 @keyframes blink {
-0%, 100% { opacity: 1; }
-50% { opacity: 0; }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out; 
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+    will-change: opacity, transform; /* Performance booster */
 }
 .reveal.active {
     opacity: 1;
