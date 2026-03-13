@@ -86,7 +86,7 @@ a {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.6s ease-out;
-    will-change: opacity, transform; /* Performance booster */
+    will-change: opacity, transform;
 }
 .reveal.active {
     opacity: 1;
@@ -95,35 +95,29 @@ a {
 .marquee-container {
     width: 100%;
     padding: 15px 0;
-    display: flex;
     overflow: hidden;
+    display: flex;
+    background-color: #ffc107;
 }
-
 .marquee-content {
     display: flex;
-    flex-direction: row;
-    /* The animation now moves only half its total width */
-    animation: marquee 10s linear infinite; 
-    white-space: nowrap;
+    flex-shrink: 0;
+    width: max-content; 
+    animation: marquee-continuous 10s linear infinite;
 }
-
 .marquee-group {
     display: flex;
     flex-shrink: 0;
     align-items: center;
 }
-
 .marquee-item {
-    padding: 0 30px; /* Adjust spacing between text here */
-    color: #000;
+    padding: 0 10px;
 }
-
-@keyframes marquee {
+@keyframes marquee-continuous {
     0% {
         transform: translateX(0);
     }
     100% {
-        /* Move by -50% because we doubled the content */
         transform: translateX(-50%);
     }
 }
