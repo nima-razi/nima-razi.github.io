@@ -92,3 +92,38 @@ a {
     opacity: 1;
     transform: translateY(0);
 }
+.marquee-container {
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.marquee-content {
+    display: flex;
+    flex-direction: row;
+    /* The animation now moves only half its total width */
+    animation: marquee 10s linear infinite; 
+    white-space: nowrap;
+}
+
+.marquee-group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.marquee-item {
+    padding: 0 30px; /* Adjust spacing between text here */
+    color: #000;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Move by -50% because we doubled the content */
+        transform: translateX(-50%);
+    }
+}
