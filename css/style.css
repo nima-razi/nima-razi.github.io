@@ -15,8 +15,9 @@ h1, h2, h3, .navbar-brand {
     --bs-tertiary-bg: #161b22; 
     --bs-primary: #7c3aed;
     --bs-primary-rgb: 124, 58, 237;
-    --bs-link-color: #2dd4bf;
-    --bs-link-hover-color: #5eead4;
+    /* Changed Teal to Light Purple/Violet */
+    --bs-link-color: #a78bfa;
+    --bs-link-hover-color: #c4b5fd;
 }
 .card {
     background-color: var(--bs-tertiary-bg);
@@ -43,7 +44,7 @@ footer a.text-decoration-none {
     display: inline-block;
 }
 footer a.text-decoration-none:hover {
-    color: #2dd4bf !important; 
+    color: var(--bs-link-hover-color) !important; 
     transform: translateY(-3px); 
 }
 footer a svg {
@@ -51,18 +52,19 @@ footer a svg {
     transition: fill 0.3s ease, transform 0.3s ease;
 }
 footer a:hover svg {
-    fill: #2dd4bf !important; 
+    fill: var(--bs-link-hover-color) !important; 
     transform: translateY(-3px);
 }
 footer a:focus, 
 footer a:active {
     outline: none !important;
     box-shadow: none !important;
-    color: #2dd4bf !important;
+    color: var(--bs-link-hover-color) !important;
 }
 a {
-    --bs-link-color-rgb: 45, 212, 191; 
-    --bs-link-hover-color-rgb: 94, 234, 212;
+    /* Updated RGB values to match the new purple palette */
+    --bs-link-color-rgb: 167, 139, 250; 
+    --bs-link-hover-color-rgb: 196, 181, 253;
 }
 .bi-github, .bi-linkedin {
     color: var(--bs-primary);
@@ -97,7 +99,7 @@ a {
     padding: 15px 0;
     overflow: hidden;
     display: flex;
-    background-color: #ffc107;
+    background-color: #7c3aed; /* Changed yellow to Primary Purple for consistency */
 }
 .marquee-content {
     display: flex;
